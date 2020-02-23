@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Demo Chat</title>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="loginForm">
+            <h3>Tên đăng nhập của bạn</h3>
+            <input type="text" name="name" placeholder="Tên của bạn"/>
+            <input type="button" id="btnRegister" value="Đăng nhập" />
+        </div>
+        <div id="chatForm">
+        </div>
+    </div>
+</body>
+<script src="jquery.js"></script>
+<script src="socket.io/socket.io.js"></script>
+<script>
+    var socket = io("http://localhost:3000/");
+</script>
+</html>
